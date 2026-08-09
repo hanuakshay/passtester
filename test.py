@@ -9,21 +9,17 @@ from brute_force_estimation import (
 )
 
 
-# ============================================================
 # BANNER
-# ============================================================
 
 def banner():
 
-    print("\n" + "=" * 65)
-    print("                         PASSTESTER")
-    print("                  PASSWORD SECURITY TOOL")
-    print("=" * 65)
+    print("\n" + "=" * 40)
+    print("             PASSTESTER")
+    print("        PASSWORD SECURITY TOOL")
+    print("=" * 40)
 
 
-# ============================================================
 # TEST PASSWORD
-# ============================================================
 
 def test_password():
 
@@ -31,9 +27,9 @@ def test_password():
 
     score, strength, feedback = check_password(password)
 
-    print("\n" + "-" * 65)
-    print("                    PASSWORD ANALYSIS")
-    print("-" * 65)
+    print("\n" + "-" * 30)
+    print("     PASSWORD ANALYSIS")
+    print("-" * 30)
 
     print(f"Length          : {len(password)}")
     print(f"Score           : {score}/10")
@@ -50,18 +46,16 @@ def test_password():
 
         print("\n[+] No basic weaknesses detected.")
 
-    print("-" * 65)
+    print("~" * 40)
 
 
-# ============================================================
 # PASSWORD GENERATOR
-# ============================================================
 
 def password_generator():
 
-    print("\n" + "-" * 65)
-    print("                   PASSWORD GENERATOR")
-    print("-" * 65)
+    print("\n" + "-" * 30)
+    print("     PASSWORD GENERATOR")
+    print("-" * 30)
 
     print("\n1. Random Password")
     print("2. Passphrase")
@@ -113,15 +107,14 @@ def password_generator():
         print("[!] Invalid option.")
 
 
-# ============================================================
+
 # Brute-Froce_EStimation- ANALYZER
-# ============================================================
 
 def brute_force_estimator():
 
-    print("\n" + "-" * 65)
-    print("                 Brute-Froce-Estimation-ANALYSIS")
-    print("-" * 65)
+    print("\n" + "-" * 30)
+    print("     Brute-Froce-Estimation-ANALYSIS")
+    print("-" * 30)
 
     password = input("\nEnter password to analyze: ")
 
@@ -137,13 +130,12 @@ def brute_force_estimator():
         print("[!] Unable to analyze password.")
         return
 
-    # --------------------------------------------------------
-    # PASSWORD INFORMATION
-    # --------------------------------------------------------
 
-    print("\n" + "-" * 65)
-    print("                    PASSWORD INFORMATION")
-    print("-" * 65)
+    # PASSWORD INFORMATION
+
+    print("\n" + "-" * 30)
+    print("     PASSWORD INFORMATION")
+    print("-" * 30)
 
     print(f"Password length      : {len(password)}")
     print(f"Character set        : {brute['charset']}")
@@ -163,13 +155,12 @@ def brute_force_estimator():
         f"{brute['entropy']:.2f} bits"
     )
 
-    # --------------------------------------------------------
-    # COMMON PASSWORD
-    # --------------------------------------------------------
 
-    print("\n" + "-" * 65)
-    print("                  COMMON PASSWORD CHECK")
-    print("-" * 65)
+    # COMMON PASSWORD
+
+    print("\n" + "-" * 30)
+    print("     COMMON PASSWORD CHECK")
+    print("-" * 30)
 
     if common["found"]:
 
@@ -185,13 +176,12 @@ def brute_force_estimator():
         print("Result               : NOT FOUND")
         print(f"Status               : {common['rank']}")
 
-    # --------------------------------------------------------
-    # PATTERN ANALYSIS
-    # --------------------------------------------------------
 
-    print("\n" + "-" * 65)
-    print("                     PATTERN ANALYSIS")
-    print("-" * 65)
+    # PATTERN ANALYSIS
+  
+    print("\n" + "-" * 30)
+    print("     PATTERN ANALYSIS")
+    print("-" * 30)
 
     if patterns:
 
@@ -205,13 +195,12 @@ def brute_force_estimator():
 
         print("Patterns detected    : NO")
 
-    # --------------------------------------------------------
+    
     # REALISTIC ATTACK
-    # --------------------------------------------------------
 
-    print("\n" + "-" * 65)
-    print("                 REAL-WORLD ATTACK MODEL")
-    print("-" * 65)
+    print("\n" + "-" * 30)
+    print("     REAL-WORLD ATTACK MODEL")
+    print("-" * 30)
 
     if realistic:
 
@@ -240,13 +229,12 @@ def brute_force_estimator():
             f"{realistic['reason']}"
         )
 
-    # --------------------------------------------------------
+  
     # THEORETICAL ATTACK TIMES
-    # --------------------------------------------------------
 
-    print("\n" + "-" * 65)
-    print("                THEORETICAL ATTACK TIMES")
-    print("-" * 65)
+    print("\n" + "-" * 30)
+    print("     THEORETICAL ATTACK TIMES")
+    print("-" * 30)
 
     results = estimate_all(password)
 
@@ -264,13 +252,12 @@ def brute_force_estimator():
             f"{format_time(data['seconds'])}"
         )
 
-    # --------------------------------------------------------
+    
     # FINAL RESULT
-    # --------------------------------------------------------
 
-    print("\n" + "=" * 65)
-    print("                     FINAL ASSESSMENT")
-    print("=" * 65)
+    print("\n" + "=" * 30)
+    print("     FINAL ASSESSMENT")
+    print("=" * 30)
 
     if realistic:
 
@@ -295,9 +282,7 @@ def brute_force_estimator():
     print("=" * 65)
 
 
-# ============================================================
 # GRADE
-# ============================================================
 
 def get_grade(score):
 
@@ -320,27 +305,22 @@ def get_grade(score):
         return "F"
 
 
-# ============================================================
 # PASSWORD HEALTH REPORT
-# ============================================================
 
 def password_health_report():
 
-    print("\n" + "=" * 65)
-    print("                  PASSWORD HEALTH REPORT")
-    print("=" * 65)
+    print("\n" + "=" * 30)
+    print("     PASSWORD HEALTH REPORT")
+    print("=" * 30)
 
     password = input("\nEnter password for full report: ")
 
-    # --------------------------------------------------------
+   
     # STRENGTH
-    # --------------------------------------------------------
 
     score, strength, feedback = check_password(password)
 
-    # --------------------------------------------------------
     # CRACK ANALYSIS
-    # --------------------------------------------------------
 
     analysis = full_crack_analysis(password)
 
@@ -351,28 +331,26 @@ def password_health_report():
 
     grade = get_grade(score)
 
-    # --------------------------------------------------------
+   
     # BASIC INFORMATION
-    # --------------------------------------------------------
 
-    print("\n" + "=" * 65)
-    print("                    PASSTESTER REPORT")
-    print("=" * 65)
+    print("\n" + "=" * 30)
+    print("     PASSTESTER REPORT")
+    print("=" * 30)
 
     print("\nPASSWORD INFORMATION")
-    print("-" * 65)
+    print("-" * 30)
 
     print(f"Length             : {len(password)} characters")
     print(f"Strength           : {strength}")
     print(f"Score              : {score}/10")
     print(f"Security Grade     : {grade}")
 
-    # --------------------------------------------------------
+ 
     # CHARACTER ANALYSIS
-    # --------------------------------------------------------
 
     print("\nCHARACTER ANALYSIS")
-    print("-" * 65)
+    print("-" * 30)
 
     has_lower = any(c.islower() for c in password)
     has_upper = any(c.isupper() for c in password)
@@ -402,14 +380,13 @@ def password_health_report():
         f"{'YES' if has_symbol else 'NO'}"
     )
 
-    # --------------------------------------------------------
+    
     # ENTROPY
-    # --------------------------------------------------------
 
     if brute_result:
 
         print("\nENTROPY ANALYSIS")
-        print("-" * 65)
+        print("-" * 30)
 
         print(
             f"Entropy            : "
@@ -421,12 +398,11 @@ def password_health_report():
             f"{brute_result['combinations']:,}"
         )
 
-    # --------------------------------------------------------
+    
     # COMMON PASSWORD
-    # --------------------------------------------------------
 
     print("\nCOMMON PASSWORD ANALYSIS")
-    print("-" * 65)
+    print("-" * 30)
 
     if common["found"]:
 
@@ -440,12 +416,11 @@ def password_health_report():
         print("Status             : NOT FOUND")
         print("Risk               : No basic common match")
 
-    # --------------------------------------------------------
+
     # PATTERN ANALYSIS
-    # --------------------------------------------------------
 
     print("\nPATTERN ANALYSIS")
-    print("-" * 65)
+    print("-" * 30)
 
     if patterns:
 
@@ -457,12 +432,11 @@ def password_health_report():
 
         print("[+] No obvious simple patterns detected.")
 
-    # --------------------------------------------------------
+    
     # REALISTIC CRACK TIME
-    # --------------------------------------------------------
 
     print("\nREALISTIC CRACK-TIME ANALYSIS")
-    print("-" * 65)
+    print("-" * 30)
 
     if realistic:
 
@@ -491,12 +465,11 @@ def password_health_report():
             f"{realistic['reason']}"
         )
 
-    # --------------------------------------------------------
+ 
     # THEORETICAL BRUTE FORCE
-    # --------------------------------------------------------
 
     print("\nTHEORETICAL BRUTE-FORCE")
-    print("-" * 65)
+    print("-" * 30)
 
     results = estimate_all(password)
 
@@ -507,12 +480,11 @@ def password_health_report():
             f"{format_time(data['seconds'])}"
         )
 
-    # --------------------------------------------------------
+
     # RECOMMENDATIONS
-    # --------------------------------------------------------
 
     print("\nSECURITY RECOMMENDATIONS")
-    print("-" * 65)
+    print("-" * 30)
 
     if feedback:
 
@@ -524,13 +496,12 @@ def password_health_report():
 
         print("[+] No basic weaknesses detected.")
 
-    # --------------------------------------------------------
+  
     # FINAL STATUS
-    # --------------------------------------------------------
 
-    print("\n" + "=" * 65)
-    print("                     OVERALL RESULT")
-    print("=" * 65)
+    print("\n" + "=" * 30)
+    print("     OVERALL RESULT")
+    print("=" * 30)
 
     if realistic:
 
@@ -564,12 +535,10 @@ def password_health_report():
         f"Security Grade     : {grade}"
     )
 
-    print("=" * 65)
+    print("~" * 40)
 
 
-# ============================================================
 # MAIN MENU
-# ============================================================
 
 def main():
 
