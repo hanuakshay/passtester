@@ -1,6 +1,7 @@
 # 🔐 PASSTESTER
 
-![License: MIT]\([https://img.shields.io/badge/License-MIT-yellow.svg](https://img.shields.io/badge/License-MIT-yellow.svg))    ![Python]\([https://img.shields.io/badge/python-3.x-blue](https://img.shields.io/badge/python-3.x-blue))
+![Stars](https://img.shields.io/github/stars/hanuakshay/passtester) ![Python](https://img.shields.io/badge/python-3.x-blue)
+
 
 A simple and beginner-friendly tool to test password strength and understand basic security concepts.
 
@@ -31,7 +32,8 @@ It’s a simple Python-based tool — lightweight and easy to run.
 
 ### License
  
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Stars](https://img.shields.io/github/stars/hanuakshay/passtester)
+This project is licensed under the MIT License.
 
  ---
 
