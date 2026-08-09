@@ -1,6 +1,6 @@
 # 🔐 PASSTESTER
 
-![Stars](https://img.shields.io/github/stars/hanuakshay/passtester) ![Python](https://img.shields.io/badge/python-3.x-blue)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)  ![Python](https://img.shields.io/badge/python-3.x-blue)
 
 
 A simple and beginner-friendly tool to test password strength and understand basic security concepts.
@@ -32,8 +32,14 @@ It’s a simple Python-based tool — lightweight and easy to run.
 
 ### License
  
-![Stars](https://img.shields.io/github/stars/hanuakshay/passtester)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+
 This project is licensed under the MIT License.
+
+### Badages
+
+![GitHub stars](https://img.shields.io/github/stars/hanuakshay/passtester) ![GitHub forks](https://img.shields.io/github/forks/hanuakshay/passtester) 
 
  ---
 
@@ -44,6 +50,7 @@ This project is licensed under the MIT License.
 bash
 
 git clone [https://github.com/hanuakshay/passtester.git](https://github.com/hanuakshay/passtester.git)
+
 cd passtester
 
 ---
@@ -51,6 +58,7 @@ cd passtester
 #### 2.Install requirements (if any)
 
 bash
+
 pip install -r requirements.txt
 
 *> ⚠️ Skip this step if there is no \`requirements.txt\` file*
@@ -60,6 +68,7 @@ pip install -r requirements.txt
 #### 3. Run the program
 
 bash
+
 python test.py
 
 
@@ -70,7 +79,8 @@ python test.py
 #### 4. Example Output
 
 
-Enter password: **********
+Enter password: ********
+
 Strength: Strong
 
 ---
@@ -78,7 +88,9 @@ Strength: Strong
 #### 5. Optional (Run in Linux/Kali directly)
 
 bash
+
 chmod +x test.py
+
 ./test.py
 
 ---
@@ -86,22 +98,29 @@ chmod +x test.py
 #### 6. 🛠️ Requirements
 
 - Python 3.x
+
 - pip (Python package manager)
 
 ---
 
-#### ❗ Troubleshooting
+#### ❗Troubleshooting
 
-- If \`python\` not found → try:
+- If python not found → try:
+
   bash
+  
   python3 test.py
 
 - If permission denied:
+  
   bash
+  
   chmod +x test.py
 
 - If module error:
+
   bash
+  
   pip install \<module\_name>
 
 ---
@@ -110,14 +129,16 @@ chmod +x test.py
 
 PassTester provides educational estimates and should not be considered a professional password-security auditing solution.
 
-Never use real passwords from important accounts for testing.
+~ Never use real passwords from important accounts for testing.
 
-Use strong, unique passwords and enable MFA wherever possible.
+~ Use strong, unique passwords and enable MFA wherever possible.
 
 ---
 
 ### AUTHOR
 
-Hanu Akshay B.Tech, Computer Science (Cyber Security)
+#### Hanu Akshay 
+
+B.Tech, Computer Science (Cyber Security)
 
 ⭐ If this helped you learn something, consider starring the repo and sharing it with others!
